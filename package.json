@@ -1,10 +1,9 @@
 {
-  "name": "mqtt",
+  "name": "mqtt-react-native-tcp",
   "description": "A library for the MQTT protocol",
-  "version": "2.18.1",
+  "version": "0.1.1",
   "contributors": [
-    "Adam Rudd <adamvrr@gmail.com>",
-    "Matteo Collina <matteo.collina@gmail.com> (https://github.com/mcollina)"
+    "Katanyoo Ubalee <ubalee.k@gmail.com>"
   ],
   "keywords": [
     "mqtt",
@@ -15,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mqttjs/MQTT.js.git"
+    "url": "git://github.com/katanyoo/MQTT.js.git"
   },
   "main": "mqtt.js",
   "types": "types/index.d.ts",
@@ -60,7 +59,7 @@
     "./mqtt.js": "./lib/connect/index.js",
     "fs": false,
     "tls": false,
-    "net": false
+    "net": "react-native-tcp"
   },
   "dependencies": {
     "commist": "^1.0.0",
@@ -71,6 +70,7 @@
     "minimist": "^1.2.0",
     "mqtt-packet": "^5.6.0",
     "pump": "^3.0.0",
+    "react-native-tcp": "^3.3.0",
     "readable-stream": "^2.3.6",
     "reinterval": "^1.1.0",
     "split2": "^2.1.1",
